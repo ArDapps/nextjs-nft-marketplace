@@ -5,11 +5,11 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faHomeAlt, faAngleRight, faArrowRight } from '@fortawesome/free-solid-svg-icons'
 import Header from '../../components/header'
 import Footer from '../../components/footer'
-import Breadcrumbs from './../../components/breadcrumbs'
-import ArePreview from './../../components/explore/art-preview'
-import ArtGallery2 from './../../components/explore/art-gallery2'
+import Breadcrumbs from '../../components/breadcrumbs'
+import ArePreview from '../../components/explore/art-preview'
+import ArtGallery2 from '../../components/explore/art-gallery2'
 
-export default function ArtDetailsPage() {
+export default function NftResellPage() {
     const breadcrumbs = ["Explore", "Beautiful Artwork"]
     const galleries = [
         {

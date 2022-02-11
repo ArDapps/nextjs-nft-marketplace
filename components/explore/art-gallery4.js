@@ -29,7 +29,7 @@ export default function ArtGallery4(props) {
                     </div>                            
                     
                     <div className="border-t-2 border-[#2E357B] p-4">
-                        <button className='rounded-full bg-gradient-to-b from-[#3461FF] to-[#8454EB] text-white text-base w-full px-4 py-2 shadow-md' onClick={props.openModal}>⚡ {item.buttonTitle}</button>
+                        <button className='rounded-full bg-gradient-to-b from-[#3461FF] to-[#8454EB] text-white text-base w-full px-4 py-2 shadow-md' onClick={props.openPriceModal}>⚡ {item.buttonTitle}</button>
                     </div>
                 </div>
             ))}
