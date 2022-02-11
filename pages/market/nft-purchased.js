@@ -35,7 +35,7 @@ export default function NftPurchasedPage() {
         closePriceModal()
         setLoaderOpen(true)
 
-        setTimeout(purchaseSuccesss, 9000)
+        setTimeout(purchaseSuccesss, 1000)
     }
 
     function closeSuccessModal() {
