@@ -12,16 +12,15 @@ export default function ExplorePage() {
     <>
       <Head>
         <title>Explore</title>
-        <link rel="icon" href="favicon.png" />
+        <link rel="icon" href="/favicon.png" />
       </Head>
 
       <Header current={0}></Header>
-      <div className='bg-[#0D0F23] w-full h-auto pt-[104px]'>
+      <div className='bg-[#0D0F23] w-full h-auto pt-[104px] flex flex-col'>
         <Paragraph1></Paragraph1>
         <Paragraph2></Paragraph2>
         <Paragraph3></Paragraph3>
         <Paragraph4></Paragraph4>
-        <br></br>
       </div>
       <Footer></Footer>
     </>

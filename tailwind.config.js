@@ -4,6 +4,9 @@ module.exports = {
     extend: {
       fontFamily: {
         'cairo': ['Cairo']
+      },
+      zIndex: {
+        '100': '100',
       }
     },
   },

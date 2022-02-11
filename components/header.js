@@ -16,6 +16,9 @@ export default function Header(props) {
         { name: 'Explore', href: '/explore ' },
         { name: 'Categories', href: '/categories' },
         { name: 'Create NFT', href: '/create-nft' },
+        { name: 'Explore-Art', href: '/explore/art-details' },
+        { name: 'Purchased Items', href: '/market/purchased' },
+        { name: 'Account Address', href: '/account/address' },
     ]
 
     return (
