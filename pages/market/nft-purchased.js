@@ -108,7 +108,7 @@ export default function NftPurchasedPage() {
 
             <Header current={-1}></Header>
 
-            <div className='bg-[#0D0F23]'>
+            <div className='bg-[#0D0F23] dark:bg-white'>
                 <div className='w-full 2xl:max-w-screen-2xl h-auto pt-[104px] m-auto'>
                     <div className='flex flex-col mx-8 sm:mx-16 lg:mx-[9vw] space-y-6 py-12'>
                         {/* custom breadcrubs */}
@@ -117,20 +117,20 @@ export default function NftPurchasedPage() {
                         <div className='border border-[#787984]'></div>
 
                         <div className='flex flex-col space-y-6'>
-                            <h1 className="flex-grow text-white text-2xl sm:text-4xl font-bold">Purchased Items</h1>
+                            <h1 className="flex-grow text-white dark:text-gray-800 text-2xl sm:text-4xl font-bold">Purchased Items</h1>
 
-                            <div className='text-white'>
+                            <div className='text-white dark:text-gray-800'>
                                 <FontAwesomeIcon icon={faClone} className="text-[#FAD804] text-xl mr-3" />
                                 This is a descriptive sub-headline that introduces the whole content of this text to the audience who is interested in reading about this topic.
                             </div>
                             
-                            <div className='flex flex-row items-center space-x-4 rounded-md bg-[#212760] p-4'>
+                            <div className='flex flex-row items-center space-x-4 rounded-md bg-[#212760] dark:bg-white border-2 border-[#212760] dark:border-2 dark:border-gray-200 p-4'>
                                 <div className='flex-none grid place-items-center w-16 h-16 rounded-md bg-[#215BF0] m-auto'>
                                     <FontAwesomeIcon icon={faClone} className="text-[#FAD804] text-4xl font-bold" />
                                 </div>
                                 <div className='flex-grow flex-col'>
-                                    <p className='text-white text-xl font-bold'>Good Job</p>
-                                    <p className='text-[#53CEC7] text-sm font-bold'>You Purchased 4 NFTS</p>
+                                    <p className='text-white dark:text-gray-800 text-xl font-bold'>Good Job</p>
+                                    <p className='text-[#53CEC7] dark:text-gray-600 text-sm font-bold'>You Purchased 4 NFTS</p>
                                 </div>
                             </div>
 
@@ -180,7 +180,7 @@ export default function NftPurchasedPage() {
                     leaveFrom="opacity-100 scale-100"
                     leaveTo="opacity-0 scale-95"
                     >
-                    <div className="inline-block w-full max-w-md p-6 my-8 overflow-hidden text-left align-middle transition-all transform bg-[#24274D] shadow-xl">
+                    <div className="inline-block w-full max-w-md p-6 my-8 overflow-hidden text-left align-middle transition-all transform bg-[#24274D] dark:bg-white shadow-xl">
                         <Dialog.Title
                         as="h3"
                         className="text-white text-2xl font-semibold leading-6 "
@@ -189,7 +189,7 @@ export default function NftPurchasedPage() {
 
                         <div className='flex flex-col space-y-2'>
                             <div className='flex flex-row'>
-                                <div className='flex-grow text-white text-2xl font-semibold'>⚡ Process to Resell</div>
+                                <div className='flex-grow text-white dark:text-gray-800 text-2xl font-semibold'>⚡ Process to Resell</div>
                                 <button className='flex-none text-[#8488B7] text-2xl' onClick={closePriceModal}>
                                     <FontAwesomeIcon icon={faTimesCircle}></FontAwesomeIcon>
                                 </button>
@@ -199,10 +199,10 @@ export default function NftPurchasedPage() {
                                 <p>Please write the new price</p>
                             </div>
 
-                            <div className='border border-[#AEB4B4]'></div>
+                            <div className='border border-[#AEB4B4] dark:border-gray-200'></div>
 
-                            <div className='relative text-[#B4BAEF] py-4'>
-                                <input className='w-full text-sm p-3.5 pr-16 rounded-md border border-[#9FA4FF] bg-[#212760] focus:outline-none focus:ring-2' type="number" min={0}  placeholder='New Price' ref={inputPriceRef} id="nft-price"></input>
+                            <div className='relative text-[#B4BAEF] dark:text-gray-600 py-4'>
+                                <input className='w-full text-sm p-3.5 pr-16 rounded-md border border-[#9FA4FF] bg-[#212760] dark:bg-white focus:outline-none focus:ring-2' type="number" min={0}  placeholder='New Price' ref={inputPriceRef} id="nft-price"></input>
                                 <p className='absolute top-1/2 right-8 -translate-y-1/2 text-sm'>ETH</p>
                                 <FontAwesomeIcon icon={faEthereum} className='absolute top-1/2 right-4 -translate-y-1/2 text-sm' />
                             </div>
@@ -257,7 +257,7 @@ export default function NftPurchasedPage() {
                     leaveFrom="opacity-100 scale-100"
                     leaveTo="opacity-0 scale-95"
                     >
-                    <div className="inline-block w-full max-w-md p-6 my-8 overflow-hidden text-left align-middle transition-all transform bg-[#24274D] shadow-xl">
+                    <div className="inline-block w-full max-w-md p-6 my-8 overflow-hidden text-left align-middle transition-all transform bg-[#24274D] dark:bg-white shadow-xl">
                         <Dialog.Title
                         as="h3"
                         className="text-white text-2xl font-semibold leading-6 "
@@ -273,8 +273,8 @@ export default function NftPurchasedPage() {
                                     ariaLabel='loading'
                                 />
                             </div>
-                            <div className='text-white text-3xl font-semibold'>Loading</div>
-                            <div className='text-[#6C71AD] text-sm'>Appreciate Your Waiting</div>
+                            <div className='text-white dark:text-gray-800 text-3xl font-semibold'>Loading</div>
+                            <div className='text-[#6C71AD] dark:text-gray-600 text-sm'>Appreciate Your Waiting</div>
                         </div>
                     </div>
                     </Transition.Child>
@@ -318,7 +318,7 @@ export default function NftPurchasedPage() {
                     leaveFrom="opacity-100 scale-100"
                     leaveTo="opacity-0 scale-95"
                     >
-                    <div className="inline-block w-full max-w-md p-6 my-8 overflow-hidden text-left align-middle transition-all transform bg-[#24274D] shadow-xl">
+                    <div className="inline-block w-full max-w-md p-6 my-8 overflow-hidden text-left align-middle transition-all transform bg-[#24274D] dark:bg-white shadow-xl">
                         <Dialog.Title
                         as="h3"
                         className="text-white text-2xl font-semibold leading-6 "
@@ -329,8 +329,8 @@ export default function NftPurchasedPage() {
                             <div className='text-[#32BA7C] text-7xl'>
                                 <FontAwesomeIcon icon={faCheckCircle}></FontAwesomeIcon>
                             </div>
-                            <div className='text-white text-3xl font-semibold'>Succeeded</div>
-                            <div className='text-[#6C71AD] text-sm'>Operation completed successfully</div>
+                            <div className='text-white dark:text-gray-800 text-3xl font-semibold'>Succeeded</div>
+                            <div className='text-[#6C71AD] dark:text-gray-600 text-sm'>Operation completed successfully</div>
                             <div className='pt-4'>
                                 <button className='rounded-full bg-gradient-to-b from-[#3461FF] to-[#8454EB] text-white text-base px-16 py-2 shadow-md' onClick={closeSuccessModal}>View</button>
                             </div>

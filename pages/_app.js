@@ -9,8 +9,22 @@ import '@fortawesome/fontawesome-free/js/brands';
 
 import '/public/assets/css/marketplace.css'
 
-function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
-}
+import { useState, createContext } from "react";
 
-export default MyApp
+export const ThemeContext = createContext()
+
+export default function MyApp({ Component, pageProps }) {
+  const [themeMode, setThemeMode] = useState(true)
+
+  function toggleThemeMode(mode) {
+    setThemeMode(mode)
+
+    themeMode ? document.body.classList.add('dark') : document.body.classList.remove('dark')
+  }
+
+  return (
+    <ThemeContext.Provider value={{ themeMode:themeMode, toggleThemeMode:toggleThemeMode }}>
+      <Component {...pageProps} />
+    </ThemeContext.Provider>
+  )
+}

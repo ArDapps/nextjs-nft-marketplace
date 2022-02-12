@@ -58,7 +58,7 @@ export default function NftResellPage() {
 
             <Header current={-1}></Header>
 
-            <div className='bg-[#0D0F23]'>
+            <div className='bg-[#0D0F23] dark:bg-white'>
                 <div className='w-full 2xl:max-w-screen-2xl h-auto pt-[104px] m-auto'>
                     <div className='flex flex-col mx-8 sm:mx-16 lg:mx-[9vw] space-y-6 py-12'>
                         {/* custom breadcrubs */}

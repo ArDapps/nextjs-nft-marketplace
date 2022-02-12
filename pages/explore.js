@@ -1,5 +1,4 @@
 import Head from 'next/head'
-
 import Header from './../components/header'
 import Footer from './../components/footer'
 import Paragraph1 from './../components/index/paragraph1'
@@ -16,7 +15,7 @@ export default function ExplorePage() {
       </Head>
 
       <Header current={0}></Header>
-      <div className='bg-[#0D0F23]'>
+      <div className='bg-[#0D0F23] dark:bg-white'>
         <div className='w-full 2xl:max-w-screen-2xl h-auto pt-[104px] flex flex-col m-auto'>
           <Paragraph1></Paragraph1>
           <Paragraph2></Paragraph2>

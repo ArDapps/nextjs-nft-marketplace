@@ -5,7 +5,7 @@ export default function Footer() {
                 <div className="grid grid-cols-1">
                     <div className="flex flex-col lg:flex-row m-4 sm:m-8 lg:m-[7vw] leading-normal">
                         <div className="w-full lg:w-[21vw] mr-0 lg:mr-16">
-                            <img src="/assets/png/logo.png" alt="logo" className="w-[60] lg:w-[12vw] h-auto"></img>
+                            <img src="/assets/png/logo-dark.png" alt="logo" className="w-[60] lg:w-[12vw] h-auto"></img>
                             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s </p>
                         </div>
 

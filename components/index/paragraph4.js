@@ -62,17 +62,17 @@ export default function Paragraph4() {
             <div className='relative grid grid-cols-1 gap-8 m-8 sm:m-16 lg:m-[9vw]'>
                 {/* categories */}
                 <div className="flex flex-col space-y-12">
-                    <h1 className="text-white text-2xl sm:text-4xl font-bold">Explore all NFTs and Start to Collect</h1>
+                    <h1 className="text-white dark:text-gray-800 text-2xl sm:text-4xl font-bold">Explore all NFTs and Start to Collect</h1>
                     <div className='flex flex-col md:flex-row space-y-2 md:space-y-0'>
                         <div className='flex flex-col md:flex-row space-y-2 md:space-x-2 md:space-y-0'>
                             {btnCategories.map((item, index) => (
-                                <button key={"btn-category" + index.toString()} className={classNames(index === current ? 'bg-[#FF457D] text-white' : 'border border-[#2C3166] bg-[#002046] text-[#919CC1]', 'text-xs rounded-full px-4 py-1.5')} onClick={() => setCurrent(index)}>{item}</button>
+                                <button key={"btn-category" + index.toString()} className={classNames(index === current ? 'bg-[#FF457D] dark:bg-gray-800 text-white' : 'border border-[#2C3166] dark:border-gray-400 bg-[#002046] dark:bg-white text-[#919CC1] dark:text-gray-800', 'text-xs rounded-full px-4 py-1.5')} onClick={() => setCurrent(index)}>{item}</button>
                             ))}
                         </div>
                         <div className='flex-grow'></div>
                         <div className='flex-none'>
                             <Link href="#">
-                                <a className="flex-none text-right text-[#A2A6D0] hover:text-white">
+                                <a className="flex-none text-right text-[#A2A6D0] hover:text-white dark:text-gray-800 dark:hover:text-gray-600">
                                     See All
                                     <FontAwesomeIcon icon={faArrowRight} className="ml-1" />
                                 </a>

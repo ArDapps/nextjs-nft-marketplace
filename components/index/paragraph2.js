@@ -38,9 +38,9 @@ export default function Paragraph2() {
             <div className='relative grid grid-cols-1 gap-8 mx-8 sm:mx-16 lg:mx-[9vw]'>
                 {/* galleries */}
                 <div className="flex flex-cols">
-                    <h1 className="flex-grow text-white text-2xl sm:text-4xl font-bold">Check Top Newest NFTs</h1>
+                    <h1 className="flex-grow text-white dark:text-gray-800 text-2xl sm:text-4xl font-bold">Check Top Newest NFTs</h1>
                     <Link href="#">
-                        <a className="flex-none text-right text-[#A2A6D0] hover:text-white">
+                        <a className="flex-none text-right text-[#A2A6D0] dark:text-gray-800 dark:hover:text-gray-600">
                             See All
                             <FontAwesomeIcon icon={faArrowRight} className="ml-1" />
                         </a>

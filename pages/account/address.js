@@ -66,7 +66,7 @@ export default function AccountAddressPage() {
 
             <Header current={-1}></Header>
 
-            <div className='bg-[#0D0F23]'>
+            <div className='bg-[#0D0F23] dark:bg-white'>
                 <div className='w-full 2xl:max-w-screen-2xl h-auto pt-[104px] m-auto'>
                     <div className='flex flex-col mx-8 sm:mx-16 lg:mx-[9vw] space-y-6 py-12'>
                         {/* custom breadcrubs */}
@@ -76,7 +76,7 @@ export default function AccountAddressPage() {
 
                         <div className='flex flex-col space-y-6'>
                             <div className='relative h-[200px] rounded-md bg-gradient-to-b from-[#3461FF] to-[#8454EB]'>
-                                <div className='absolute left-1/2 bottom-0 -translate-x-1/2 translate-y-1/2 w-[128px] h-[128px] rounded-full border-2 border-white'></div>
+                                <div className='absolute left-1/2 bottom-0 -translate-x-1/2 translate-y-1/2 w-[128px] h-[128px] rounded-full border-2 border-white dark:border-gray-800'></div>
                                 <div className='absolute left-1/2 bottom-0 -translate-x-1/2 translate-y-1/2 w-[112px] h-[112px] rounded-full bg-gradient-to-b from-[#3461FF] to-[#8454EB]'></div>
                             </div>
 
@@ -84,7 +84,7 @@ export default function AccountAddressPage() {
                                 <div className='flex-none w-16'>
                                 </div>
 
-                                <div className='flex-grow flex flex-col items-center space-y-6 text-white text-center'>
+                                <div className='flex-grow flex flex-col items-center space-y-6 text-white dark:text-gray-800 text-center'>
                                     <h1 className='text-xl font-semibold'>Account Address</h1>
                                     <div className='w-[80%] sm:w-[60%] md:w-[40%] text-sm'>This is a descriptive sub-headline that introduces the whole content of this text to the audience who is interested in reading about this topic.</div>
 
@@ -96,16 +96,16 @@ export default function AccountAddressPage() {
                                     {/* categories */}
                                     <div className='flex flex-row space-x-2'>
                                         {btnCategories.map((item, index) => (
-                                            <button key={"btn-category" + index.toString()} className={classNames(index === current ? 'bg-[#FF457D] text-white' : 'border border-[#2C3166] bg-[#002046] text-[#919CC1]', 'text-xs rounded-full px-6 py-1.5')} onClick={() => setCurrent(index)}>{item}</button>
+                                            <button key={"btn-category" + index.toString()} className={classNames(index === current ? 'bg-[#FF457D] dark:bg-gray-800 text-white' : 'border border-[#2C3166] dark:border-gray-400 bg-[#002046] dark:bg-white text-[#919CC1] dark:text-gray-800', 'text-xs rounded-full px-6 py-1.5')} onClick={() => setCurrent(index)}>{item}</button>
                                         ))}
                                     </div>
                                 </div>
 
                                 <div className='flex-none flex flex-col items-center space-y-1'>
-                                    <div className='w-16 h-12 rounded-xl bg-white text-lg text-center py-[10px]'>
-                                        <p>01</p>
+                                    <div className='w-16 h-12 rounded-xl bg-white dark:bg-gray-800 text-lg text-center py-[10px]'>
+                                        <p className='dark:text-white'>01</p>
                                     </div>
-                                    <div className='text-white text-xs'>NFT Count</div>
+                                    <div className='text-white dark:text-gray-800 text-xs'>NFT Count</div>
                                 </div>
                             </div>
 

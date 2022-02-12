@@ -21,22 +21,22 @@ export default function CreateNftPage() {
 
             <Header current={2}></Header>
 
-            <div className='bg-[#0D0F23]'>
+            <div className='bg-[#0D0F23] dark:bg-white'>
                 <div className='w-full 2xl:max-w-screen-2xl h-auto pt-[104px] m-auto'>
-                    <div className='flex flex-col mx-8 sm:mx-12 lg:mx-[9vw] space-y-6 py-12'>
+                    <div className='flex flex-col mx-8 sm:mx-12 lg:mx-[9vw] space-y-6 py-12 dark:text-gray-800'>
                         {/* custom breadcrubs */}
                         <Breadcrumbs home="Create NFT" breadcrumbs={breadcrumbs}></Breadcrumbs>
 
                         <div className='border border-[#787984]'></div>
 
-                        <h1 className='text-white text-4xl md:text-6xl font-bold'>Create Your NFT</h1>
-                        <p className='text-white text-xl'>This is a descriptive sub-headline that introduces the whole content of this text to the audience who is interested in reading about this topic.</p>
+                        <h1 className='text-4xl md:text-6xl font-bold'>Create Your NFT</h1>
+                        <p className='text-xl'>This is a descriptive sub-headline that introduces the whole content of this text to the audience who is interested in reading about this topic.</p>
 
                         <div className='flex flex-col lg:flex-row items-center'>
                             {/* left input element */}
-                            <div className='w-full lg:w-[40%] flex-none flex flex-col space-y-4 text-white'>
+                            <div className='w-full lg:w-[40%] flex-none flex flex-col space-y-4'>
                                 {/* file chooser */}
-                                <div className='bg-[#212760] h-[160px] rounded-md border-dashed border border-[#9FA4FF] text-[#B4BAEF]'>
+                                <div className='bg-[#212760] dark:bg-white h-[160px] rounded-md border-dashed border border-[#9FA4FF] text-[#B4BAEF]'>
                                     <label className='h-full flex flex-col text-center p-2 cursor-pointer'>
                                         <div className='flex-1 text-6xl my-2'>
                                             <FontAwesomeIcon icon={faImage} className="" />
@@ -48,20 +48,20 @@ export default function CreateNftPage() {
                                     </label>
                                 </div>
                             
-                                <input className='text-[#B4BAEF] text-sm p-3.5 rounded-md border border-[#9FA4FF] bg-[#212760] focus:outline-none focus:ring-2' placeholder='NFT Title' id="nft-title"></input>
+                                <input className='text-[#B4BAEF] text-sm p-3.5 rounded-md border border-[#9FA4FF] bg-[#212760] dark:bg-white focus:outline-none focus:ring-2' placeholder='NFT Title' id="nft-title"></input>
 
-                                <select className='text-[#B4BAEF] text-sm px-3.5 py-3 rounded-md border border-[#9FA4FF] bg-[#212760] focus:outline-none focus:ring-2 appearance-none custom-select' placeh      older='NFT Title' defaultValue={0} id="nft-category">
+                                <select className='text-[#B4BAEF] text-sm px-3.5 py-3 rounded-md border border-[#9FA4FF] bg-[#212760] dark:bg-white focus:outline-none focus:ring-2 appearance-none custom-select' placeholder='NFT Title' defaultValue={0} id="nft-category">
                                     <option value="0" disabled>Choose Category</option>
                                 </select>
 
                                 <div className='relative text-[#B4BAEF]'>
-                                    <input className='w-full text-sm p-3.5 pr-16 rounded-md border border-[#9FA4FF] bg-[#212760] focus:outline-none focus:ring-2' type="number" min={0}  placeholder='Price' id="nft-price"></input>
+                                    <input className='w-full text-sm p-3.5 pr-16 rounded-md border border-[#9FA4FF] bg-[#212760] dark:bg-white focus:outline-none focus:ring-2' type="number" min={0}  placeholder='Price' id="nft-price"></input>
                                     <p className='absolute top-1/2 right-8 -translate-y-1/2 text-sm'>ETH</p>
                                     <FontAwesomeIcon icon={faEthereum} className='absolute top-1/2 right-4 -translate-y-1/2 text-sm' />
                                 </div>
                                 
 
-                                <textarea className='text-[#B4BAEF] text-sm p-3.5 rounded-md border border-[#9FA4FF] bg-[#212760] focus:outline-none focus:ring-2' rows="6" placeholder='Desription'></textarea>
+                                <textarea className='text-[#B4BAEF] text-sm p-3.5 rounded-md border border-[#9FA4FF] bg-[#212760] dark:bg-white focus:outline-none focus:ring-2' rows="6" placeholder='Desription'></textarea>
 
                                 <button className='rounded-full bg-gradient-to-b from-[#3461FF] to-[#8454EB] text-white text-base px-6 sm:px-10 py-2 shadow-md m-auto' id="btn-create-nft">Create</button>
                             </div>
