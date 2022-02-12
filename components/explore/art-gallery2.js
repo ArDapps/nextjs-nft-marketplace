@@ -24,7 +24,7 @@ export default function ArtGallery2(props) {
                             </div>
                             <h1 className="flex-grow text-[#47DEF2] text-base ml-2">0.045ETH</h1>
                         </div>
-                        <p className="text-sm">Account Address</p>
+                        <p className="text-sm">0xA720eE5b6Fc85Ac3fc7438ca611Af88284E94113</p>
                         <p className="text-[#A2A6D0] text-xs">Onwer</p>
                     </div>                            
                     

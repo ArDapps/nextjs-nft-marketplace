@@ -108,7 +108,7 @@ export default function Header(props) {
                                                                 <img src="/assets/svg/brand-metamask.svg"></img>
                                                             </div>
                                                             <div className='flex-1 flex flex-col'>
-                                                                <p className='flex-1 text-white text-sm font-bold'>Account Address</p>
+                                                                <p className='flex-1 text-white text-sm font-bold'>0xA720eE5b6Fc85Ac3fc7438ca611Af88284E94113</p>
                                                                 <p className='text-[#7D82B2] text-xs text-left'>This is a sub-headline</p>
                                                             </div>
                                                             <div className='grid place-items-center w-[22px] h-[22px] bg-[#215BF0] text-[#FAD804] text-xs font-bold rounded-sm'>
