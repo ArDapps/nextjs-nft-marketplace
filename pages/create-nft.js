@@ -23,7 +23,7 @@ export default function CreateNftPage() {
 
             <div className='bg-[#0D0F23] dark:bg-white'>
                 <div className='w-full 2xl:max-w-screen-2xl h-auto pt-[104px] m-auto'>
-                    <div className='flex flex-col mx-8 sm:mx-12 lg:mx-[9vw] space-y-6 py-12 dark:text-gray-800'>
+                    <div className='flex flex-col mx-8 sm:mx-12 lg:mx-[9vw] space-y-6 py-12 text-white dark:text-gray-800'>
                         {/* custom breadcrubs */}
                         <Breadcrumbs home="Create NFT" breadcrumbs={breadcrumbs}></Breadcrumbs>
 
