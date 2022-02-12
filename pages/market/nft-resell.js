@@ -56,29 +56,32 @@ export default function NftResellPage() {
                 <link rel="icon" href="/favicon.png" />
             </Head>
 
-            <Header current={3}></Header>
-            <div className='bg-[#0D0F23] w-full h-auto pt-[104px]'>
-                <div className='flex flex-col mx-8 sm:mx-16 lg:mx-[9vw] space-y-6 py-12'>
-                    {/* custom breadcrubs */}
-                    <Breadcrumbs home="Home" breadcrumbs={breadcrumbs}></Breadcrumbs>
+            <Header current={-1}></Header>
 
-                    <div className='flex flex-col space-y-12'>
-                        {/* art details */}
-                        <ArePreview></ArePreview>
-                        
-                        <div className="flex flex-cols items-center">
-                            <h1 className="flex-grow text-white text-2xl sm:text-4xl font-bold">Related Nfts Category</h1>
-                            <Link href="#">
-                                <a className="flex-none text-right text-[#A2A6D0] hover:text-white">
-                                    See All
-                                    <FontAwesomeIcon icon={faArrowRight} className="ml-1" />
-                                </a>
-                            </Link>
+            <div className='bg-[#0D0F23]'>
+                <div className='w-full 2xl:max-w-screen-2xl h-auto pt-[104px] m-auto'>
+                    <div className='flex flex-col mx-8 sm:mx-16 lg:mx-[9vw] space-y-6 py-12'>
+                        {/* custom breadcrubs */}
+                        <Breadcrumbs home="Home" breadcrumbs={breadcrumbs}></Breadcrumbs>
+
+                        <div className='flex flex-col space-y-12'>
+                            {/* art details */}
+                            <ArePreview></ArePreview>
+                            
+                            <div className="flex flex-cols items-center">
+                                <h1 className="flex-grow text-white text-2xl sm:text-4xl font-bold">Related Nfts Category</h1>
+                                <Link href="#">
+                                    <a className="flex-none text-right text-[#A2A6D0] hover:text-white">
+                                        See All
+                                        <FontAwesomeIcon icon={faArrowRight} className="ml-1" />
+                                    </a>
+                                </Link>
+                            </div>
+
+                            {/* galleries */}
+                            <ArtGallery2 galleries={galleries}></ArtGallery2> 
                         </div>
-
-                        {/* galleries */}
-                        <ArtGallery2 galleries={galleries}></ArtGallery2> 
-                    </div>
+                    </div> 
                 </div>
             </div>
             <Footer></Footer>

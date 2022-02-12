@@ -76,24 +76,27 @@ export default function CategoryPage() {
             </Head>
 
             <Header current={1}></Header>
-            <div className='bg-[#0D0F23] w-full h-auto pt-[104px]'>
-                <div className='flex flex-col mx-8 sm:mx-16 lg:mx-[9vw] space-y-6 py-12'>
-                    {/* custom breadcrubs */}
-                    <Breadcrumbs home="Home" breadcrumbs={breadcrumbs}></Breadcrumbs>
+            
+            <div className='bg-[#0D0F23]'>
+                <div className='w-full 2xl:max-w-screen-2xl h-auto pt-[104px] m-auto'>
+                    <div className='flex flex-col mx-8 sm:mx-16 lg:mx-[9vw] space-y-6 py-12'>
+                        {/* custom breadcrubs */}
+                        <Breadcrumbs home="Home" breadcrumbs={breadcrumbs}></Breadcrumbs>
 
-                    <div className='border border-[#787984]'></div>
+                        <div className='border border-[#787984]'></div>
 
-                    {/* categories */}
-                    <div className='flex flex-col md:flex-row space-y-2 md:space-y-0'>
-                        <div className='flex flex-col md:flex-row space-y-2 md:space-x-2 md:space-y-0'>
-                            {btnCategories.map((item, index) => (
-                                <button key={"btn-category" + index.toString()} className={classNames(index === current ? 'bg-[#FF457D] text-white' : 'border border-[#2C3166] bg-[#002046] text-[#919CC1]', 'text-xs rounded-full px-4 py-1.5')} onClick={() => setCurrent(index)}>{item}</button>
-                            ))}
+                        {/* categories */}
+                        <div className='flex flex-col md:flex-row space-y-2 md:space-y-0'>
+                            <div className='flex flex-col md:flex-row space-y-2 md:space-x-2 md:space-y-0'>
+                                {btnCategories.map((item, index) => (
+                                    <button key={"btn-category" + index.toString()} className={classNames(index === current ? 'bg-[#FF457D] text-white' : 'border border-[#2C3166] bg-[#002046] text-[#919CC1]', 'text-xs rounded-full px-4 py-1.5')} onClick={() => setCurrent(index)}>{item}</button>
+                                ))}
+                            </div>
                         </div>
-                    </div>
 
-                    {/* galleries */}
-                    <ArtGallery2 galleries={galleries}></ArtGallery2>
+                        {/* galleries */}
+                        <ArtGallery2 galleries={galleries}></ArtGallery2>
+                    </div>
                 </div>
             </div>
             <Footer></Footer>
