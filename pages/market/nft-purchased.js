@@ -106,37 +106,41 @@ export default function NftPurchasedPage() {
                 <link rel="icon" href="/favicon.png" />
             </Head>
 
-            <Header current={4}></Header>
-            <div className='bg-[#0D0F23] w-full h-full pt-[104px]'>
-                <div className='flex flex-col mx-8 sm:mx-16 lg:mx-[9vw] space-y-6 py-12'>
-                    {/* custom breadcrubs */}
-                    <Breadcrumbs home="Home" breadcrumbs={breadcrumbs}></Breadcrumbs>
+            <Header current={-1}></Header>
 
-                    <div className='border border-[#787984]'></div>
+            <div className='bg-[#0D0F23]'>
+                <div className='w-full 2xl:max-w-screen-2xl h-auto pt-[104px] m-auto'>
+                    <div className='flex flex-col mx-8 sm:mx-16 lg:mx-[9vw] space-y-6 py-12'>
+                        {/* custom breadcrubs */}
+                        <Breadcrumbs home="Home" breadcrumbs={breadcrumbs}></Breadcrumbs>
 
-                    <div className='flex flex-col space-y-6'>
-                        <h1 className="flex-grow text-white text-2xl sm:text-4xl font-bold">Purchased Items</h1>
+                        <div className='border border-[#787984]'></div>
 
-                        <div className='text-white'>
-                            <FontAwesomeIcon icon={faClone} className="text-[#FAD804] text-xl mr-3" />
-                            This is a descriptive sub-headline that introduces the whole content of this text to the audience who is interested in reading about this topic.
-                        </div>
-                        
-                        <div className='flex flex-row items-center space-x-4 rounded-md bg-[#212760] p-4'>
-                            <div className='flex-none grid place-items-center w-16 h-16 rounded-md bg-[#215BF0] m-auto'>
-                                <FontAwesomeIcon icon={faClone} className="text-[#FAD804] text-4xl font-bold" />
+                        <div className='flex flex-col space-y-6'>
+                            <h1 className="flex-grow text-white text-2xl sm:text-4xl font-bold">Purchased Items</h1>
+
+                            <div className='text-white'>
+                                <FontAwesomeIcon icon={faClone} className="text-[#FAD804] text-xl mr-3" />
+                                This is a descriptive sub-headline that introduces the whole content of this text to the audience who is interested in reading about this topic.
                             </div>
-                            <div className='flex-grow flex-col'>
-                                <p className='text-white text-xl font-bold'>Good Job</p>
-                                <p className='text-[#53CEC7] text-sm font-bold'>You Purchased 4 NFTS</p>
+                            
+                            <div className='flex flex-row items-center space-x-4 rounded-md bg-[#212760] p-4'>
+                                <div className='flex-none grid place-items-center w-16 h-16 rounded-md bg-[#215BF0] m-auto'>
+                                    <FontAwesomeIcon icon={faClone} className="text-[#FAD804] text-4xl font-bold" />
+                                </div>
+                                <div className='flex-grow flex-col'>
+                                    <p className='text-white text-xl font-bold'>Good Job</p>
+                                    <p className='text-[#53CEC7] text-sm font-bold'>You Purchased 4 NFTS</p>
+                                </div>
                             </div>
-                        </div>
 
-                        {/* galleries */}
-                        <ArtGallery4 galleries={galleries} openPriceModal={openPriceModal} closePriceModal={closePriceModal}></ArtGallery4> 
+                            {/* galleries */}
+                            <ArtGallery4 galleries={galleries} openPriceModal={openPriceModal} closePriceModal={closePriceModal}></ArtGallery4> 
+                        </div>
                     </div>
                 </div>
             </div>
+            
             <Footer></Footer>
 
             {/* price input dialog  */}

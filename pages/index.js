@@ -16,11 +16,13 @@ export default function ExplorePage() {
       </Head>
 
       <Header current={0}></Header>
-      <div className='bg-[#0D0F23] w-full h-auto pt-[104px] flex flex-col'>
-        <Paragraph1></Paragraph1>
-        <Paragraph2></Paragraph2>
-        <Paragraph3></Paragraph3>
-        <Paragraph4></Paragraph4>
+      <div className='bg-[#0D0F23]'>
+        <div className='w-full 2xl:max-w-screen-2xl h-auto pt-[104px] flex flex-col m-auto'>
+          <Paragraph1></Paragraph1>
+          <Paragraph2></Paragraph2>
+          <Paragraph3></Paragraph3>
+          <Paragraph4></Paragraph4>
+        </div>
       </div>
       <Footer></Footer>
     </>

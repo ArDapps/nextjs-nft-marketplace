@@ -23,7 +23,7 @@ export default function Header(props) {
     return (
         <Disclosure as="nav" className="z-50 fixed w-full h-[104px] bg-[#002046]">
         {({ open }) => (
-            <>
+            <div className='w-full 2xl:max-w-screen-2xl m-auto'>
                 <div className="mx-auto px-4 sm:px-8 lg:px-[6vw] h-full">
                     <div className="relative flex items-center justify-between h-full">
                         <div className="absolute inset-y-0 left-0 flex items-center lg:hidden">
@@ -281,7 +281,7 @@ export default function Header(props) {
                         </Disclosure>
                     </div>
                 </Disclosure.Panel>
-            </>
+            </div>
         )}
         </Disclosure>
     )
