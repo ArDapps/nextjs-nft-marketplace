@@ -21,9 +21,7 @@ export default function MyApp({ Component, pageProps }) {
     if(theme === null) theme = true
     
     console.log("local storage " + theme)
-    setTimeout(() => {
-      toggleThemeMode(theme)
-    }, 1000);
+    toggleThemeMode(theme)
   }, [])
 
   function toggleThemeMode(mode) {
