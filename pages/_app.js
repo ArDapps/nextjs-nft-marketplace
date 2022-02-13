@@ -14,7 +14,17 @@ import { useState, useEffect, createContext } from "react";
 export const ThemeContext = createContext()
 
 export default function MyApp({ Component, pageProps }) {
-  const [themeMode, setThemeMode] = useState(true)
+  const [themeMode, setThemeMode] = useState(false)
+
+  useEffect(() => {
+    let theme = localStorage.getItem("dark-mode")
+    if(theme === null) theme = true
+    
+    console.log("local storage " + theme)
+    setTimeout(() => {
+      toggleThemeMode(theme)
+    }, 1000);
+  }, [])
 
   function toggleThemeMode(mode) {
     localStorage.setItem("dark-mode", mode)

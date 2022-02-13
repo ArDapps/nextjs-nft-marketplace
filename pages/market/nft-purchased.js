@@ -58,42 +58,42 @@ export default function NftPurchasedPage() {
         {
             title : "Beautiful Artwork",
             description : "Collectibles",
-            artUrl : "/assets/svg/art-rect3.svg",
+            artUrl : "/assets/img/art3.gif",
             artId : "art1",
             buttonTitle : "Process to Resell"
         },
         {
             title : "Beautiful Artwork",
             description : "Collectibles",
-            artUrl : "/assets/svg/art-rect1.svg",
+            artUrl : "/assets/img/art1.png",
             artId : "art2",
             buttonTitle : "Process to Resell"
         },
         {
             title : "Beautiful Artwork",
             description : "Collectibles",
-            artUrl : "/assets/svg/art-rect2.svg",
+            artUrl : "/assets/img/art2.jpeg",
             artId : "art3",
             buttonTitle : "Process to Resell"
         },
         {
             title : "Beautiful Artwork",
             description : "Collectibles",
-            artUrl : "/assets/svg/art-rect3.svg",
+            artUrl : "/assets/img/art3.gif",
             artId : "art4",
             buttonTitle : "Process to Resell"
         },
         {
             title : "Beautiful Artwork",
             description : "Collectibles",
-            artUrl : "/assets/svg/art-rect1.svg",
+            artUrl : "/assets/img/art4.jpeg",
             artId : "art5",
             buttonTitle : "Process to Resell"
         },
         {
             title : "Beautiful Artwork",
             description : "Collectibles",
-            artUrl : "/assets/svg/art-rect2.svg",
+            artUrl : "/assets/img/art1.png",
             artId : "art6",
             buttonTitle : "Process to Resell"
         },

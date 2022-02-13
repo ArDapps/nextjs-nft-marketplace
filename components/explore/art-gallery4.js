@@ -9,15 +9,15 @@ export default function ArtGallery4(props) {
                  <div key={item.artId} className='w-full h-auto grid grid-cols-1 bg-[#161A42] border-2 border-[#161A42] dark:bg-white rounded-2xl text-white dark:text-gray-800 dark:border-2 dark:border-gray-200 hover:cursor-pointer hover:border-2 hover:border-gray-200 dark:hover:border-[#325BC5]'>
                     <div className='grid grid-cols-1 gap-2 p-4'>
                         <div className='bg-white rounded-xl'>
-                            <img src={item.artUrl} alt={item.artId} className='w-full h-auto'></img>
+                            <img src={item.artUrl} alt={item.artId} className='w-[80vw] h-[80vw] sm:w-[40vw] sm:h-[40vw] md:w-[20vw] md:h-[20vw] lg:w-[15vw] lg:h-[15vw] xl:w-[13vw] xl:h-[13vw] object-cover rounded-xl'></img>
                         </div>
                         <div className='flex flex-row'>
-                            <h1 className="flex-grow text-base">{item.title}</h1>
-                            <button className="rounded-full border-2 border-[#2E357B] dark:border-0 dark:bg-[#325BC5] w-[1.75rem] h-[1.75rem] text-white">
-                                <FontAwesomeIcon icon={faAngleRight} className="" />
+                            <h1 className="flex-grow text-base text-ellipsis overflow-hidden whitespace-nowrap">{item.title}</h1>
+                            <button className="rounded-full border-2 border-[#2E357B] dark:border-0 dark:bg-[#325BC5] text-white">
+                                <FontAwesomeIcon icon={faAngleRight} className="w-[1.5rem] h-[1.5rem]" />
                             </button>
                         </div>
-                        <p className="text-[#A2A6D0] text-sm">{item.description}</p>
+                        <p className="text-[#A2A6D0] text-sm text-ellipsis overflow-hidden whitespace-nowrap">{item.description}</p>
                         <div className='flex flex-row py-4'>
                             <div className="rounded-full w-[1.5rem] text-center bg-[#325BC5] text-white">
                                 <FontAwesomeIcon icon={faEthereum} className="" />

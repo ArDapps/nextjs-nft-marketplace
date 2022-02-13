@@ -15,35 +15,35 @@ export default function NftResellPage() {
         {
             title : "Beautiful Artwork",
             description : "Collectibles",
-            artUrl : "/assets/svg/art-rect3.svg",
+            artUrl : "/assets/img/art3.gif",
             artId : "art1",
             buttonTitle : "BUY NOW"
         },
         {
             title : "Beautiful Artwork",
             description : "Collectibles",
-            artUrl : "/assets/svg/art-rect1.svg",
+            artUrl : "/assets/img/art1.png",
             artId : "art2",
             buttonTitle : "BUY NOW"
         },
         {
             title : "Beautiful Artwork",
             description : "Collectibles",
-            artUrl : "/assets/svg/art-rect2.svg",
+            artUrl : "/assets/img/art2.jpeg",
             artId : "art3",
             buttonTitle : "BUY NOW"
         },
         {
             title : "Beautiful Artwork",
             description : "Collectibles",
-            artUrl : "/assets/svg/art-rect3.svg",
+            artUrl : "/assets/img/art3.gif",
             artId : "art4",
             buttonTitle : "BUY NOW"
         },
         {
             title : "Beautiful Artwork",
             description : "Collectibles",
-            artUrl : "/assets/svg/art-rect1.svg",
+            artUrl : "/assets/img/art4.jpeg",
             artId : "art5",
             buttonTitle : "BUY NOW"
         },

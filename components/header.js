@@ -44,7 +44,7 @@ export default function Header(props) {
                             <div className="flex-none self-center">
                                 <Link href="/">
                                     <a>
-                                        <img src={"/assets/png/logo-" + (themeMode ? "dark" : "light") + ".png"} alt="Logo" className='h-16 w-auto'></img>
+                                        <img src={"/assets/img/logo-" + (themeMode ? "dark" : "light") + ".png"} alt="Logo" className='h-16 w-auto'></img>
                                     </a>
                                 </Link>
                             </div>

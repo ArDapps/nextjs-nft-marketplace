@@ -5,8 +5,8 @@ import { faEthereum } from '@fortawesome/free-brands-svg-icons'
 export default function ArtPreview () {
     return (
         <div className='flex flex-col lg:flex-row items-center space-x-0 space-y-8 lg:space-x-8 lg:space-y-0 bg-[#161A42] border-2 border-[#161A42] dark:bg-white dark:border-2 dark:border-gray-200 rounded-md p-6'>
-            <div className='flex-none w-full lg:w-[30%]'>
-                <img src="/assets/svg/art-rect2.svg" className='w-full'></img>
+            <div className='flex-none'>
+                <img src="/assets/img/art2.jpeg" className='w-[60vw] h-[60vw] lg:w-[30vw] lg:h-[30vw] object-cover rounded-xl'></img>
             </div>
 
             <div className='flex-1 w-full flex flex-col lg:flex-row space-x-0 space-y-8 lg:space-x-8 lg:space-y-0'>

@@ -8,21 +8,21 @@ export default function Paragraph2() {
         {
             title : "Beautiful Artwork",
             description : "Collectibles",
-            artUrl : "/assets/svg/art-round1.svg",
+            artUrl : "/assets/img/art1.png",
             artId : "art1",
             buttonTitle : "BUY NOW"
         },
         {
             title : "Beautiful Artwork",
             description : "Collectibles",
-            artUrl : "/assets/svg/art-round2.svg",
+            artUrl : "/assets/img/art2.jpeg",
             artId : "art2",
             buttonTitle : "BUY NOW"
         },
         {
             title : "Beautiful Artwork",
             description : "Collectibles",
-            artUrl : "/assets/svg/art-round3.svg",
+            artUrl : "/assets/img/art3.gif",
             artId : "art3",
             buttonTitle : "BUY NOW"
         }
