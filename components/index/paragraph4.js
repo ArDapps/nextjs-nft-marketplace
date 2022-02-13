@@ -48,13 +48,6 @@ export default function Paragraph4() {
             artId : "art5",
             buttonTitle : "BUY NOW"
         },
-        {
-            title : "Beautiful Artwork",
-            description : "Collectibles",
-            artUrl : "/assets/img/art2.jpeg",
-            artId : "art6",
-            buttonTitle : "BUY NOW"
-        },
     ]
 
     return (
