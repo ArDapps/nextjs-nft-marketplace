@@ -35,7 +35,7 @@ export default function Paragraph2() {
                 <img src="/assets/svg/dot-square.svg" alt="dot-square" className="absolute left-0 top-0 w-[10vw]"></img>
             </div>
             
-            <div className='relative grid grid-cols-1 gap-8 mx-8 sm:mx-16 lg:mx-[9vw]'>
+            <div className='relative grid grid-cols-1 gap-8 mx-8 sm:mx-16 '>
                 {/* galleries */}
                 <div className="flex flex-cols">
                     <h1 className="flex-grow text-white dark:text-gray-800 text-2xl sm:text-4xl font-bold">Check Top Newest NFTs</h1>

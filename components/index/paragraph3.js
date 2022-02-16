@@ -29,7 +29,7 @@ export default function Paragraph3() {
 
     return (
         <div className='w-full h-auto'>
-            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mx-8 mt-8 sm:mx-16 sm:mt-16 lg:mx-[9vw] lg:mt-[9vw]'>
+            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mx-8 mt-8 sm:mx-16 sm:mt-16'>
                 {sellNftDetails.map((item, index) => (
                     <div key={"sell-nft" + index.toString()} className='grid grid-cols-1 gap-4'>
                         <img src={item.iconUrl + (themeMode ? '.svg' : '-dark.svg')}></img>

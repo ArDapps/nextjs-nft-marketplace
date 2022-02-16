@@ -60,7 +60,7 @@ export default function NftResellPage() {
 
             <div className='bg-[#0D0F23] dark:bg-white'>
                 <div className='w-full 2xl:max-w-screen-2xl h-auto pt-[104px] m-auto'>
-                    <div className='flex flex-col mx-8 sm:mx-16 lg:mx-[9vw] space-y-6 py-12'>
+                    <div className='flex flex-col mx-8 sm:mx-16  space-y-6 py-12'>
                         {/* custom breadcrubs */}
                         <Breadcrumbs home="Home" breadcrumbs={breadcrumbs}></Breadcrumbs>
 

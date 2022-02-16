@@ -52,7 +52,7 @@ export default function Paragraph4() {
 
     return (
         <div className='w-full h-auto'>
-            <div className='relative grid grid-cols-1 gap-8 m-8 sm:m-16 lg:m-[9vw]'>
+            <div className='relative grid grid-cols-1 gap-8 m-8 sm:m-16'>
                 {/* categories */}
                 <div className="flex flex-col space-y-12">
                     <h1 className="text-white dark:text-gray-800 text-2xl sm:text-4xl font-bold">Explore all NFTs and Start to Collect</h1>

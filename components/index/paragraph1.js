@@ -4,11 +4,11 @@ export default function Paragraph1() {
     const description = "OpenSea is the world's first and largest NFT marketplace"
     
     return (
-        <div className='flex flex-col space-y-8 md:flex-row md:space-y-0 mx-8 sm:mx-16 lg:mx-[9vw]'>
+        <div className='flex flex-col space-y-8 md:flex-row md:space-y-0 mx-8 sm:mx-16 '>
             {/* left element */}
-            <div className='relative mt-8 sm:mt-16 lg:mt-[9vw]'>
-                <div className='md:absolute md:top-[12vw] md:left-0 md:w-[50vw] flex flex-col items-center md:items-start text-white dark:text-gray-800'>
-                    <h1 className='text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold leading-tight'>{title}</h1>
+            <div className='relative mt-8 sm:mt-16'>
+                <div className='md:absolute md:top-1/2 md:-translate-y-1/2 md:left-0 md:w-[50vw] lg:w-[40vw] flex flex-col items-center md:items-start text-white dark:text-gray-800'>
+                    <h1 className='text-2xl sm:text-3xl md:text-4xl xl:text-5xl font-bold leading-tight'>{title}</h1>
                     <p className=' text-base leading-tight mt-2 sm:mt-6'>{description}</p>
                     <div className='flex-1 flex flex-row gap-8 mt-[4vw]'>
                         <div className=''>
